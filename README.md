@@ -35,15 +35,15 @@ O executável final ficará na pasta dist/ e pode ser usado em qualquer máquina
 
 Suponha que você tenha uma pasta com arquivos como:
 
-documento1.pdf \n
-documento2.docx \n
-documento3.xlsx \n
+documento1.pdf  
+documento2.docx  
+documento3.xlsx  
 
 Com REname, você pode renomeá-los rapidamente para um padrão como:
 
-documento1 - NOME CLIENTE.pdf \n
-documento2 - NOME CLIENTE.docx \n
-documento3 - NOME CLIENTE.xlsx \n
+documento1 - NOME CLIENTE.pdf  
+documento2 - NOME CLIENTE.docx  
+documento3 - NOME CLIENTE.xlsx  
 
 ## Contribuindo
 
