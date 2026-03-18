@@ -1,24 +1,26 @@
-REname
+# REname 🚀
 
-REname é uma ferramenta desenvolvida para automatizar a renomeação de arquivos em lote, inspirada por uma necessidade real de escritório. Minha noiva, que é advogada, precisava renomear documentos repetidamente seguindo um padrão específico. Para otimizar essa tarefa, criei esta aplicação em Python para Windows, tornando o processo rápido e eficiente.
+**REname** é uma ferramenta desenvolvida para automatizar a **renomeação de arquivos em lote**, inspirada por uma necessidade real de escritório.  
 
-Funcionalidades
+Minha noiva, que é advogada, precisava renomear documentos repetidamente seguindo um padrão específico. Para otimizar essa tarefa, criei esta aplicação em **Python** para **Windows**, tornando o processo rápido e eficiente.
 
-Renomeação automática de arquivos em lote.
+---
 
-Definição de padrões personalizados de nomes.
+## ✨ Funcionalidades
 
-Economia de tempo em tarefas repetitivas de escritório.
+- ✅ Renomeação automática de arquivos em **lote**  
+- ✅ Definição de **padrões personalizados** de nomes  
+- ✅ Economia de tempo em tarefas repetitivas de escritório  
+- ✅ Interface simples e intuitiva (**GUI**)  
 
-Interface simples e intuitiva (GUI).
+---
 
-Pré-requisitos
+## 🛠 Pré-requisitos
 
-Python 3.7 ou superior (para rodar via script .py).
+- Python 3.7 ou superior (para rodar via script `.py`)  
+- Biblioteca PyInstaller (apenas se for gerar o executável)  
 
-Biblioteca PyInstaller (apenas se for gerar o executável).
-
-Instalação do PyInstaller:
+## Instalação do PyInstaller:
 
 pip install pyinstaller
 Como usar
@@ -29,7 +31,7 @@ pyinstaller --noconsole --onefile main.py
 
 O executável final ficará na pasta dist/ e pode ser usado em qualquer máquina Windows sem precisar do Python instalado.
 
-Exemplo de uso
+## Exemplo de uso
 
 Suponha que você tenha uma pasta com arquivos como:
 
@@ -43,10 +45,10 @@ documento1 - NOME CLIENTE.pdf
 documento2 - NOME CLIENTE.docx
 documento3 - NOME CLIENTE.xlsx
 
-Contribuindo
+## Contribuindo
 
 Se quiser melhorar o projeto, adicionar novos recursos ou corrigir bugs, fique à vontade para abrir um pull request ou enviar issues.
 
-Licença
+## Licença
 
 Este projeto é open-source e pode ser usado livremente.
