@@ -43,7 +43,17 @@ Com REname, você pode renomeá-los rapidamente para um padrão como:
 
 documento1 - NOME CLIENTE.pdf  
 documento2 - NOME CLIENTE.docx  
-documento3 - NOME CLIENTE.xlsx  
+documento3 - NOME CLIENTE.xlsx
+
+Basta colocá-los na mesma pasta, informar para o REname a pasta em que estão os arquivos, informar o texto a ser adicionado no final (opcional), 
+adicionar o texto que deseja remover (opcional) e então a aplicação irá renomear todos os arquivos daquela pasta com o padrão informado.  
+
+obs.:
+- É obrigatório informar pelo menos um campo de texto, mas caso mande um o outro se torna opcional, permitindo que o usuário possa apenas remover ou 
+adicionar texto.
+- Caso um texto a ser removido não esteja presente em todos os arquivos da pasta, ele irá remover apenas os que possuem o texto e não irá retornar erro.
+- O sistema considera diferenças de maiúsculo ou minúsculo, então caso deseje remover deve ser digitado da mesma forma que está escrito.
+- O remover remove todas as recorrências do texto informado, portanto se informar apenas uma letra 'a', por exemplo, ele irá remover todas as letras 'a' dos títulos dos arquivos.  
 
 ## Contribuindo
 
