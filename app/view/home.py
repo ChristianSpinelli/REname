@@ -25,7 +25,13 @@ def init_home():
         insert_text = text_entry.get()
         remove_text = text_remove_entry.get()
         folder_path = folder_entry.get()
-        fileController.rename_files(folder_path, remove_text, insert_text)
+        all_instances_checked = check_all_instances.get()
+        files_renamed = fileController.rename_files(folder_path, remove_text, insert_text, all_instances_checked)
+        if(files_renamed):
+            text_entry.delete(0, len(insert_text))
+            text_remove_entry.delete(0, len(remove_text))
+            check_all_instances.deselect()
+        
 
     # Criação da janela principal
     app = ctk.CTk()
@@ -51,6 +57,9 @@ def init_home():
 
     text_remove_entry = ctk.CTkEntry(main_frame, width=400, height=35)
     text_remove_entry.pack(pady=5, padx=20)
+
+    check_all_instances = ctk.CTkCheckBox(main_frame, text="Substituir TODAS as ocorrências.", checkbox_height=20, checkbox_width=20, corner_radius=5)
+    check_all_instances.pack(anchor="w", padx=30, pady=10)
 
     # Campo de texto
     text_label = ctk.CTkLabel(main_frame, text="Informe o texto que deseja adicionar:")
