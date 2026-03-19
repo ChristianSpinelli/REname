@@ -24,7 +24,7 @@ class FileController:
            return False
         return True
            
-   def rename_files(self, folder_path:str, remove_text:str, insert_text:str):
+   def rename_files(self, folder_path:str, remove_text:str, insert_text:str, all_instances_checked:bool):
     """
     Renomeia todos os arquivos na pasta adicionando o texto fornecido.
     """
@@ -42,9 +42,12 @@ class FileController:
             name, ext = os.path.splitext(file_name)
 
             if(remove_text != ""):
-               name = name.replace(remove_text, "")
+               if all_instances_checked:
+                  name = name.replace(remove_text, insert_text)
+               else:
+                  name = name.replace(remove_text, insert_text, 1)
 
-            if (insert_text != ""):
+            if (insert_text != "" and remove_text == ""):
                # Novo nome: nome antigo - conteúdo removido(caso houver) + nome novo adicionado + extensão no final 
                new_name = f"{name.rstrip()} {insert_text.rstrip()}{ext}"
             else:
