@@ -25,7 +25,11 @@ def init_home():
         insert_text = text_entry.get()
         remove_text = text_remove_entry.get()
         folder_path = folder_entry.get()
-        fileController.rename_files(folder_path, remove_text, insert_text)
+        files_renamed = fileController.rename_files(folder_path, remove_text, insert_text)
+        if(files_renamed):
+            text_entry.delete(0, len(insert_text))
+            text_remove_entry.delete(0, len(remove_text))
+        
 
     # Criação da janela principal
     app = ctk.CTk()
