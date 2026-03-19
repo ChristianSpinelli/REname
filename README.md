@@ -53,7 +53,8 @@ obs.:
 adicionar texto.
 - Caso um texto a ser removido não esteja presente em todos os arquivos da pasta, ele irá remover apenas os que possuem o texto e não irá retornar erro.
 - O sistema considera diferenças de maiúsculo ou minúsculo, então caso deseje remover deve ser digitado da mesma forma que está escrito.
-- O remover remove todas as recorrências do texto informado, portanto se informar apenas uma letra 'a', por exemplo, ele irá remover todas as letras 'a' dos títulos dos arquivos.  
+- Por padão remove apenas a primeira ocorrência, mas pode marcar um checkbox para remover todas as ocorrências
+- Caso remova e insira ao mesmo tempo o texto inserido será na posição do texto que foi removido.  
 
 ## Contribuindo
 
